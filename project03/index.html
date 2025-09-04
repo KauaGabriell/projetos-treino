@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Quadro Kanban</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meu Quadro Kanban</h1>
+
+        <form id="form-novo-cartao">
+            <input type="text" id="cartao-titulo" placeholder="Título do Cartão" required>
+            <textarea id="cartao-descricao" placeholder="Descrição (opcional)"></textarea>
+            <button type="submit">Adicionar Cartão</button>
+        </form>
+
+        <div class="kanban-board">
+            <div class="kanban-column" id="coluna-a-fazer">
+                <h2>A Fazer <span class="contador" id="contadorAFazer">(0)</span></h2>
+                <div class="kanban-cards">
+                    </div>
+            </div>
+
+            <div class="kanban-column" id="coluna-em-andamento">
+                <h2>Em Andamento <span class="contador" id="contadorEmAndamento">(0)</span></h2>
+                <div class="kanban-cards">
+                    </div>
+            </div>
+
+            <div class="kanban-column" id="coluna-concluido">
+                <h2>Concluído <span class="contador" id="contadorConcluido">(0)</span></h2>
+                <div class="kanban-cards">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
